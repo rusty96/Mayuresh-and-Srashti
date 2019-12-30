@@ -1,0 +1,63 @@
+#about > p
+{
+	float: none;
+}
+
+.story-pic
+{
+	float: left;
+	width: 100%;
+	background-color: white;
+}
+
+.side-pic-left
+{
+	float: left;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	width: 30%;
+	background-color: white;
+}
+
+.side-pic-right
+{
+	float: right;
+	margin-left: 1em;
+	margin-bottom: 1em;
+	width: 30%;
+	background-color: white;
+}
+
+#info
+{
+	display: inline-block;
+	background-color: white;
+	width: 100%;
+}
+
+#info-text
+{
+	float: left;
+	padding: 1em;
+	padding-top: 1.5em;
+}
+
+/*Mobile*/
+@media screen and (max-width: 900px) 
+{
+	.side-pic-left
+	{
+		float: left;
+		margin-right: 1em;
+		width: 40%;
+		background-color: white;
+	}
+	
+	.side-pic-right
+	{
+		float: right;
+		margin-left: 1em;
+		width: 40%;
+		background-color: white;
+	}	
+}

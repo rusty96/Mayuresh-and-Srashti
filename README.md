@@ -1,2 +1,2 @@
-# Mayuresh-and-Srashti
-A wedding website for My  Best Bhaiya
+# Himani-And-Maheesh
+A wedding website for my cousin.

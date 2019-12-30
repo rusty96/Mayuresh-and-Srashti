@@ -1,0 +1,127 @@
+<html lang="en">
+	<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121683743-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-121683743-1');
+
+        </script>
+        <style> 
+body{ 
+    text-align: center; 
+    background: #18181a; 
+  font-family: sans-serif; 
+  font-weight: 100; 
+} 
+h1{ 
+  color: #fff; 
+  font-weight: 100; 
+  font-size: 40px; 
+  margin: 40px 0px 20px; 
+} 
+ #clockdiv{ 
+    font-family: sans-serif; 
+    color: #fff; 
+    display: inline-block; 
+    font-weight: 100; 
+    text-align: center; 
+    font-size: 30px; 
+} 
+#clockdiv > div{ 
+    padding: 10px; 
+    border-radius: 3px; 
+    background: #17191a; 
+    display: inline-block; 
+} 
+#clockdiv div > span{ 
+    padding: 15px; 
+    border-radius: 3px; 
+    background: #17191a; 
+    display: inline-block; 
+} 
+smalltext{ 
+    padding-top: 5px; 
+    font-size: 16px; 
+} 
+</style> 
+		<title>Mayuresh and Srashti</title>		
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/wedding.css">
+		<!--Google Font-->
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700italic,700,600italic' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div id="us">		
+				<h1><span class="tim">Mayuresh</span> and <span class="victoria">Srashti</span> are getting married!</h1>
+			</div>
+			<img id="couple" src="img/main.jpg" alt="The Lovely Couple">
+		</div>
+
+		<nav id="nav">
+			<ul>
+				<h1>Countdown Clock</h1> 
+<div id="clockdiv"> 
+  <div> 
+    <span class="days" id="day"></span> 
+    <div class="smalltext">Days</div> 
+  </div> 
+  <div> 
+    <span class="hours" id="hour"></span> 
+    <div class="smalltext">Hours</div> 
+  </div> 
+  <div> 
+    <span class="minutes" id="minute"></span> 
+    <div class="smalltext">Minutes</div> 
+  </div> 
+  <div> 
+    <span class="seconds" id="second"></span> 
+    <div class="smalltext">Seconds</div> 
+  </div> 
+</div> 
+  
+<p id="demo"></p> 
+  
+<script> 
+  
+var deadline = new Date("Jan 21, 2020 18:00:00").getTime(); 
+  
+var x = setInterval(function() { 
+  
+var now = new Date().getTime(); 
+var t = deadline - now; 
+var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+document.getElementById("day").innerHTML =days ; 
+document.getElementById("hour").innerHTML =hours; 
+document.getElementById("minute").innerHTML = minutes;  
+document.getElementById("second").innerHTML =seconds;  
+if (t < 0) { 
+        clearInterval(x); 
+        document.getElementById("demo").innerHTML = "TIME UP"; 
+        document.getElementById("day").innerHTML ='0'; 
+        document.getElementById("hour").innerHTML ='0'; 
+        document.getElementById("minute").innerHTML ='0' ;  
+        document.getElementById("second").innerHTML = '0'; } 
+}, 1000); 
+</script> 
+				<li><a href="story.html">Our Story</a></li>
+				<li><a href="wedding_info.html">Our Wedding</a></li>
+			
+			</ul>
+		</nav>
+	</body>
+	<footer>
+		<p>Wedding 2019</p>
+	</footer>
+</html>
